@@ -1,0 +1,18 @@
+.form-gap {
+    padding-top: 70px;
+}
+
+
+.container{
+    margin: 10px auto;
+}
+
+.card{
+    margin: 10px auto;
+    background: rgb(61,159,223);
+background: radial-gradient(circle, rgba(61,159,223,1) 29%, rgba(115,136,204,1) 100%, rgba(26,58,162,1) 100%);
+}
+
+.btn-lg{
+    margin: 10px;
+}

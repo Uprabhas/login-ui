@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<div class="form-gap"></div>
+<div class="container">
+	<mat-card class="card " style="width: 25rem;">
+		<div class="card-body ">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="text-center">
+                  <h3><i class="fa fa-lock fa-4x"></i></h3>
+                  <mat-card-title class="text-center">Forgot Password?</mat-card-title>
+                  <mat-card-subtitle>You can reset your password here.</mat-card-subtitle>
+                  <div class="panel-body">
+    
+                    <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+    
+                      <div class="form-group" [formGroup]="forgotpass" (ngSubmit)="forgot()">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                          <input id="email" style="margin: 20px;" formControlName="email" name="email" placeholder="email address" class="form-control email"  type="email">
+                          <!-- <mat-form-field class="example-full-width" style="margin-left: 25px;padding:4px;wid">
+                            <mat-label>Email</mat-label>
+                            <input  matInput placeholder="google123@.gmail.com" value="">
+                          </mat-form-field> -->
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button mat-raised-button name="recover-submit" class="btn btn-primary btn-block"  type="submit">Reset Password</button>
+                      </div>
+                      
+                      <input type="hidden" class="hide" name="token" id="token" value=""> 
+                    </form>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+	</mat-card>
+</div>

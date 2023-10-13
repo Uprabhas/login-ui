@@ -1,0 +1,33 @@
+<div class="body">
+    <div class="containe">
+        <mat-card class="card" style="height:50vh;border:none;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="border: none;width:250px;margin:20px">
+                        <img mat-card-image style="border-radius: 10px;" src="{{detail.avatar}}" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="main-body font">
+                        <div class="back">
+                            <button mat-raised-button color="accent" class="btn btn-warning" routerLink="/userlist"><i
+                                    class="fa fa-arrow-left" aria-hidden="true"></i>back</button>
+                        </div>
+                        <div class="font">
+                            <h4 class="font">
+                                <mat-card-content for="">Name:{{detail.first_name}}</mat-card-content>
+                            </h4>
+                            <h4 class="font">
+                                <mat-card-content for="">last_name:{{detail.last_name}}</mat-card-content>
+                            </h4>
+
+                            <h3 class="font">
+                                <mat-card-content>Email:{{detail.email}}</mat-card-content>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

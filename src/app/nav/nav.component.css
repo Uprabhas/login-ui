@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Pacifico&family=Tomorrow&display=swap');
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(240, 233, 233);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(2,0,36);}
+  
+  /* Show the dropdown menu on hover */
+    
+  .dropdown:hover .dropdown-content {display: block; color: #ddd; background-color:rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,119,232,1) 100%, rgba(61,159,223,1) 100%);}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: transparent;border-radius: 20px;}
+.navbar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,119,232,1) 100%, rgba(61,159,223,1) 100%);
+    
+    
+}
+.btn-search{
+    position:relative !important ;
+    margin-left: -22rem !important;
+    padding: 8px;
+    background-color: #ddd;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.me-2{
+    /* margin-left:-em !important ; */
+    width: 500px;
+    font-size: 20px;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+
+    
+}
+
+.navbar-brand img{
+    width :10%;
+    
+    
+}
+
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.nav-item{
+    padding: 7px 8px;
+    font-size:22px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+
+}

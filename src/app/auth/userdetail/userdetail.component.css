@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital@1&display=swap');
+.body{
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    /* background: rgb(15, 3, 54);
+background: linear-gradient(90deg, rgb(17, 7, 53) 0%, rgba(23,18,60,1) 56%); */
+    margin: 0;
+    padding: 50px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+
+
+.card{
+    /* margin:px; */
+    /* height: 70vh; */
+    color: white;
+    /* box-shadow: 4px 6px #697588; */
+    background: rgb(15, 3, 54);
+background: linear-gradient(90deg, rgb(17, 7, 53) 0%, rgba(23,18,60,1) 56%);
+font-family: 'Tomorrow', sans-serif;
+}
+.back{
+    /* align-items: end; */
+    text-align: end;
+}
+.btn{
+    margin: 10px;
+}
+.font{
+    font-family: 'DM Serif Display', serif;
+    text-shadow: 1px 1px 2px rgb(211, 203, 93),
+    0 0 1em rgb(160, 160, 175),
+    0 0 0.2em rgb(164, 164, 226);;
+    font-size: 22px;
+}
+.det{
+    margin: 20px;
+}

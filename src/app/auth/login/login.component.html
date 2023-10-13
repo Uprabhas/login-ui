@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<mat-card class="signup" style="background-color: #573b8a;">
+				<form [formGroup]="signup" (ngSubmit)="Onsignup($event)">
+					<label for="chk" aria-hidden="true" >Sign up</label>
+					<img src="../../../assets/signup.png" alt="" style="height: 100px;width:100px; margin-left:354px">
+					<!-- <input type="text" formControlName="username" id="username" placeholder="User name" required=""> -->
+					<input type="email" formControlName="email" id="email" placeholder="Email" required="">
+					<input type="password" formControlName="password" id="password" placeholder="Password" required="">
+					<button style="background-color: aliceblue; color:black" type="submit" (click)="logi()" >Sign up</button>
+					<!-- [disabled]="!signup.valid" -->
+				</form>
+			</mat-card>
+
+			<mat-card class="login">
+				<form [formGroup]="login" (ngSubmit)="Onlogin($event)">
+					<label for="chk" aria-hidden="true">Login</label>
+					<img src="../../../assets/login.png" alt="" style="height: 100px;width:100px; margin-left:354px">
+					<input type="email" formControlName="email" id="email" name="email" placeholder="Email" required="">
+					<input type="password" formControlName="password" id="password" name="pswd" placeholder="Password" required="">
+					<button mat-raised-button type="submit" (click)="logi()" >Login</button>
+					<!-- [disabled]="!login.valid" -->
+				</form>
+				<div class="fp"><a class="pass" routerLink="/forgotpass" >Forgot password?</a><br/>	</div>
+			</mat-card>
+	</div>
+</body>
+<router-outlet></router-outlet>
+</html>

@@ -1,0 +1,45 @@
+<div class="body">
+    <div class="main">
+        <mat-card class="main-body">
+            <div class="product-card row-cols-1">
+                <div class="show-card">
+                    <div class="">
+                        <div class="page-inner">
+                            <div class="row row-cols-4">
+                                <div class="a" *ngFor="let item of userdata">
+                                    <mat-card class="el-wrapper " style="background-color: black;color:white">
+                                        <div class="box-up">
+                                            <img mat-card-lg-image class="img" style="border-radius: 200px;" src={{item.avatar}} alt="">
+                                            <div class="img-info">
+                                                <div class="info-inner">
+                                                    <mat-card-content style="color: white; font-family: 'Acme', sans-serif;" 
+                                                        class="p-name">{{item.first_name}}</mat-card-content>
+                                                    <mat-card-content style="color: white; font-family: 'Acme', sans-serif;"
+                                                        class="p-company">{{item.last_name}}</mat-card-content>
+                                                </div>
+                                                <!-- <div class="a-size">Email : <span style="color: white;"
+                                                        class="size">{{item.email}}</span></div> -->
+                                            </div>
+                                        </div>
+
+                                        <div class="box-down" style="cursor: pointer;">
+                                            <div class="h-bg">
+                                                <div class="h-bg-inner"></div>
+                                            </div>
+                                            <a class="cart" (click)="id(item.id)">
+                                                <!-- <span style="color: white;"  class="price">{{item.id}}</span> -->
+                                                <span class="add-to-cart">
+                                                    <!-- <span class="txt">User</span>  -->
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </mat-card>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
